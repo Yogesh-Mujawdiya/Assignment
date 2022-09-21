@@ -1,4 +1,4 @@
-package com.dairy;
+package com.assignment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,16 +8,15 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 @SpringBootApplication
-public class DairyManagementSystemApplication  {
-
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(DairyManagementSystemApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @Bean
     public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.dairy")).build();
+        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.assignment")).build();
     }
 
 }
