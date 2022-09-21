@@ -1,1 +1,0 @@
-<h1>Dairy Management System</h1>
