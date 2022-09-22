@@ -4,10 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
@@ -18,7 +15,7 @@ public class Controller {
 
     @GetMapping("/palindrome/{string}")
     public ResponseEntity<Boolean> isPalindrome(@PathVariable("string") String str) {
-        StringBuffer sbr = new StringBuffer(str);
+        StringBuilder sbr = new StringBuilder(str);
         sbr.reverse();
         if (str.equals(sbr.toString())) {
             return new ResponseEntity<>(Boolean.TRUE, HttpStatus.OK);

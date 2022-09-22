@@ -61,7 +61,7 @@
 <body style="text-align: center;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-    <nav class="navbar bg-light">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           Assignment 1
@@ -69,7 +69,7 @@
       </div>
     </nav>
 
-    <div class="card shadow-sm" style="width: 50rem; margin: 20px auto;">
+    <div class="card shadow-sm" style="width: 50rem; margin: 80px auto 20px;">
       <div class="card-body">
         <h5 class="card-title">1. Check String is Palindrome</h5>
         <div class="input-group mb-3">
