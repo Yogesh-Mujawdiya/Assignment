@@ -43,10 +43,10 @@
     }
 
     function transposeMatrix(){
-        var a = document.getElementById("i1").innerHTML;
-        var b = document.getElementById("i2").innerHTML;
-        var c = document.getElementById("i3").innerHTML;
-        var d = document.getElementById("i4").innerHTML;
+        var a = document.getElementById("i1").innerText.trim();
+        var b = document.getElementById("i2").innerText.trim();
+        var c = document.getElementById("i3").innerText.trim();
+        var d = document.getElementById("i4").innerText.trim();
         var matrix = [[a,b],[c,d]];
         axios.post('http://localhost:8080/transpose/', matrix).then(resp => {
             console.log(resp.data);
